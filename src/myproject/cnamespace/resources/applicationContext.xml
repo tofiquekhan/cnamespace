@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ <bean id="stdBean" class="myproject.cnamespace.beans.Student">
+ <constructor-arg value="S-111"/>
+ <constructor-arg value="Tofique"/>
+ <constructor-arg value="Indore"/>
+ <constructor-arg ref="courseBean"/>
+ 
+ </bean>
+ <bean id="courseBean" class="myproject.cnamespace.beans.Course">
+ <constructor-arg value="C-1111"/>
+ <constructor-arg value="Java"/>
+ <constructor-arg value="10000"/>
+ 
+ </bean>
+ </beans>
