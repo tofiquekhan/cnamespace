@@ -4,17 +4,17 @@ xmlns:c="http://www.springframework.org/schema/c"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
  http://www.springframework.org/schema/beans/spring-beans.xsd">
- <bean id="stdBean" class="myproject.cnamespace.beans.Student">
- <constructor-arg value="S-111"/>
+ <bean id="stdBean" class="myproject.cnamespace.beans.Student" c:sid="S-222" c:sname="Himanshu" c:saddr="Ujjain" c:course-ref="courseBean"/>
+ <!-- <constructor-arg value="S-111"/>
  <constructor-arg value="Tofique"/>
  <constructor-arg value="Indore"/>
  <constructor-arg ref="courseBean"/>
  
- </bean>
- <bean id="courseBean" class="myproject.cnamespace.beans.Course">
- <constructor-arg value="C-1111"/>
+ </bean> -->
+ <bean id="courseBean" class="myproject.cnamespace.beans.Course" c:cid="C-222" c:cname="Java" c:ccost="10000"/>
+ <!-- <constructor-arg value="C-1111"/>
  <constructor-arg value="Java"/>
  <constructor-arg value="10000"/>
  
- </bean>
+ </bean> -->
  </beans>
